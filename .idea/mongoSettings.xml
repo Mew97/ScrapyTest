@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MongoConfiguration">
+    <option name="serverConfigurations">
+      <list>
+        <ServerConfiguration>
+          <option name="authenticationDatabase" value="admin" />
+          <option name="authenticationMechanism" value="SCRAM-SHA-1" />
+          <option name="label" value="hadoop" />
+          <option name="password" value="hadoop" />
+          <option name="serverUrls">
+            <list>
+              <option value="192.168.11.33:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+          <option name="username" value="hadoop" />
+        </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="authenticationDatabase" value="admin" />
+          <option name="authenticationMechanism" value="SCRAM-SHA-1" />
+          <option name="label" value="bus" />
+          <option name="password" value="admin" />
+          <option name="serverUrls">
+            <list>
+              <option value="192.168.11.30:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+          <option name="username" value="admin" />
+        </ServerConfiguration>
+      </list>
+    </option>
+  </component>
+</project>
