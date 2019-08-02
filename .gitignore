@@ -1,0 +1,15 @@
+venv
+.idea
+*.iws
+*.iml
+*.ipr
+
+## JRebel ##
+rebel.xml
+
+## MAC ##
+.DS_Store
+
+## Other ##
+logs/
+temp/
