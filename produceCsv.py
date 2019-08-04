@@ -23,18 +23,17 @@ for buses in load_dict:
             relationship.append((stations[list_bus[i+1]]["id"], stations[list_bus[i]]["id"], buses))
 
 
-
 # print(stations)
 
 
-with open("node.csv", "w", encoding="utf-8") as node_f:
+with open("./bus/node.csv", "w", encoding="utf-8") as node_f:
     node_f.writelines("id:ID(Station),name:String,x:String,y:String,:Label\n")
     for station in stations:
         label = ";".join(stations[station]["label"])
         node_f.writelines(str(stations[station]["id"])+","+station+","+str(stations[station]["x"])+","+str(stations[station]["y"])+","+label+"\n")
     node_f.close()
 
-with open("relationship.csv", "w", encoding="utf8") as relationship_f:
+with open("./bus/relationship.csv", "w", encoding="utf8") as relationship_f:
     relationship_f.writelines(":START_ID(Station),:END_ID(Station),:TYPE\n")
     for i in relationship:
         relationship_f.writelines(str(i[0])+","+str(i[1])+"," + i[2] + "\n")
